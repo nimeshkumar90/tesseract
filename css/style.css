@@ -8,6 +8,10 @@ a{
 a:hover{
     color: #000;
 }
+.h-95
+{
+    height: 95%!important;
+}
 .font-mons{
     font-family: 'Montserrat', sans-serif!important;
 }
@@ -43,6 +47,7 @@ a:hover{
 }
 .banner-conntent{
     position: absolute;
+    padding-left: 60px!important;;
 }
 .title-one{
     color:#fff;
@@ -205,30 +210,63 @@ a:hover{
 .modal-content {
     height: 100%; /* = 100% of the .modal-dialog block */
 }
+
+/*Small Screen Phones*/
+@media (max-width: 576px) { 
+    .pl-5{
+        padding-left:1.4rem!important;
+    }
+    .display-5{
+      font-size: 2rem!important;
+    }
+    .h5, h5 {
+        font-size: 1rem!important;
+    }
+    .slide-menu{
+        width: 80%!important;;
+    }
+  }
+  
+  /* Size md */
+  @media (max-width: 992px) { 
+    /*Modal Height*/
+    .modal-dialog {
+      height: 50%; /* = 90% of the .modal-backdrop block = %90 of the screen */
+    }
+    .modal-content {
+      height: 70%; /* = 100% of the .modal-dialog block */
+    }
+    .pl-5{
+        padding-left:1.4rem!important;
+    }
+  }
+
+  /*landscape*/
 @media (min-width: 576px){
     .modal-dialog {
         max-width: 1000px;
         margin: 1.75rem auto;
     }
-    }
+}
     
-    @media (max-height: 500px) { 
+@media (max-height: 500px) { 
       .px-sm-5{
         padding:0rem!important;
         padding-left:1rem!important; 
         padding-right:0rem!important;  
       }
-    
       .modal-dialog {
         max-width: 400px;
         margin: 1.75rem auto;
     }
-    
-    
-    .display-4{
-        font-size: 2.5rem!important;
+    .display-5{
+        font-size: 2rem!important;   
     }
+    .h5, h5 {
+        font-size: 1rem!important;
     }
+    
+}
 /*Slide menu  bar*/
 .slide-menu{
     height: 100vh;
